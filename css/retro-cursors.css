@@ -1,0 +1,25 @@
+/* Base cursor for everything */
+html, body, * {
+    cursor: url('../assets/cursors/normal-select.cur'), auto;
+}
+
+/* Clickable elements */
+a,
+button,
+select,
+input[type="submit"],
+.go-button,
+.nav-link,
+.movie-link,
+.vote-button,
+.watch-trailer-btn,
+.retro-button,
+.close-button,
+.retro-close-btn {
+    cursor: url('../assets/cursors/Link\ Select.cur'), pointer;
+}
+
+/* Loading state */
+.loading * {
+    cursor: url('../assets/cursors/busy2.png'), wait;
+}

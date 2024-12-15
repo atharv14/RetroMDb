@@ -1,67 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro IMDb</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>RetroMDb - The Retro Movie Database</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/retro-cursors.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="container nav-content">
-            <div class="logo">IMDb</div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search movies...">
-                <i class="fas fa-search"></i>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="retro-loading">
+            <div class="loading-text">
+                <span class="blink">> WELCOME TO RetroMDb...</span>
             </div>
-        </div>
-    </nav>
-
-    <div class="container">
-        <section class="featured">
-            <img src="/api/placeholder/1200/400" alt="Featured Movie">
-            <div class="featured-content">
-                <h2>28 Years Later</h2>
-                <p>Watch the Trailer</p>
-            </div>
-        </section>
-
-        <h2 style="margin: 2rem 0;">Featured Today</h2>
-        <div class="movie-grid">
-            <!-- Movie Cards -->
-            <div class="movie-card">
-                <img src="/api/placeholder/200/300" alt="Movie 1">
-                <h3>Movie Title</h3>
-                <p><i class="fas fa-star"></i> 4.5/5</p>
-                <button class="retro-button">View Details</button>
-            </div>
-            <!-- More movie cards -->
-            <div class="movie-card">
-                <img src="/api/placeholder/200/300" alt="Movie 2">
-                <h3>Retro Action</h3>
-                <p><i class="fas fa-star"></i> 4.2/5</p>
-                <button class="retro-button">View Details</button>
-            </div>
-            <div class="movie-card">
-                <img src="/api/placeholder/200/300" alt="Movie 3">
-                <h3>Digital Dreams</h3>
-                <p><i class="fas fa-star"></i> 4.8/5</p>
-                <button class="retro-button">View Details</button>
+            <div class="loading-animation">
             </div>
         </div>
     </div>
 
+    <div class="container">
+        <!-- Top Dots -->
+        <div class="top-dots">
+            <div class="dot"></div>
+        </div>
+
+        <!-- Site Header -->
+        <header id="#home" class="site-header">
+            <h1 class="site-title">THE RETRO MOVIE DATABASE</h1>
+            <div class="retro-logo">RetroMDb</div>
+        </header>
+
+        <!-- Bottom Dots -->
+        <div class="bottom-dots">
+            <div class="dot"></div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <a href="#home" class="nav-link">HOME</a>
+            <a href="#search-section" class="nav-link">SEARCH</a>
+            <a href="#box-office" class="nav-link">BOX OFFICE</a>
+            <a href="#poll" class="nav-link">POLL</a>
+            <a href="#people-section" class="nav-link">CAST</a>
+        </nav>
+
+        <!-- Search Section -->
+        <section id="search-section" class="search-section">
+            <div class="search-container">
+                <span class="search-label">Search the database for:</span>
+                <select class="search-dropdown">
+                    <option value="all">All</option>
+                </select>
+                <input type="text" class="search-input" placeholder="search movies">
+                <button class="go-button">GO!</button>
+            </div>
+            <!-- <div class="more-searches">
+                <a href="#" class="more-link">More searches!</a>
+            </div> -->
+        </section>
+
+        <!-- Search Results Modal -->
+        <div id="searchModal" class="retro-modal">
+            <div class="retro-modal-content">
+                <div class="retro-modal-header">
+                    <div class="search-results-title">FOUND X MATCHES FOR: "QUERY"</div>
+                    <button class="retro-close-btn">×</button>
+                </div>
+                <div class="search-results-container">
+                    <!-- Search results will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Grid -->
+        <main class="main-content">
+            <!-- Left Column -->
+            <section id="box-office" class="box-section">
+                <div class="box-header">BOX OF THE DAY</div>
+                <div class="featured-movie">
+                    <img src="../assets/movies/goodfellas.jpg" alt="Goodfellas">
+                    <h3 class="movie-title">GOODFELLAS (1990)</h3>
+                    <a href="#" class="watch-link">WATCH THE TRAILER</a>
+                </div>
+            </section>
+
+            <!-- Center Column -->
+            <section class="main-section">
+                <div class="box-header">TOP 10 DVDS - UP TO 40% OFF</div>
+                <div class="dvd-list">
+                    <!-- DVD list will be populated by JS -->
+                </div>
+            </section>
+
+            <!-- Right Column -->
+            <!-- Sidebar Section -->
+            <section id="poll" class="sidebar-section">
+                <div class="box-header">TODAY'S POLL</div>
+                <div class="poll-content">
+                    <p>Which movie sequel would you like to see?</p>
+                    <div class="poll-options">
+                        <!-- The poll options will be dynamically generated based on the movieData array -->
+                    </div>
+                    <button class="vote-button">VOTE!</button>
+                    <div class="poll-results"></div>
+                </div>
+            </section>
+        </main>
+
+        <section class="people-section">
+            <div class="people-header">
+                <div class="box-header">CAST</div>
+            </div>
+            <div class="people-content">
+                <div class="cast-container">
+                    <!-- Cast cards will be displayed here in a horizontal layout -->
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Footer -->
     <footer class="footer">
-        <div class="blink">⭐ WELCOME TO RETRO IMDB ⭐</div>
-        <div class="visitor-counter">
-            Visitors: 000001
-        </div>
-        <div class="netscape">
-            Best viewed in Netscape Navigator
-        </div>
+        <p>Copyright © 1990-2001 The Retro Movie Database Ltd Terms under which this service is provided to you. A NOT Amazon company</p>
     </footer>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
