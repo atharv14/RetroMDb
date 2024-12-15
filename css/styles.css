@@ -90,6 +90,8 @@ body::before {
     margin: 20px auto;
     border: 2px solid var(--retro-yellow);
     max-width: var(--max-width);
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .nav-link {
@@ -97,11 +99,44 @@ body::before {
     text-decoration: none;
     padding: 10px 20px;
     font-size: 14px;
+    text-align: center;
+    flex: 1;
+    min-width: max-content;
 }
 
 .nav-link:hover {
     background: var(--retro-yellow);
     color: var(--retro-black);
+}
+
+/* Add media queries for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .main-nav {
+        padding: 5px;
+    }
+
+    .nav-link {
+        font-size: 10px; /* Even smaller font for very small screens */
+        padding: 6px 8px;
+    }
+}
+
+/* For very small screens */
+@media screen and (max-width: 480px) {
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid var(--retro-yellow);
+    }
+
+    .nav-link:last-child {
+        border-bottom: none;
+    }
 }
 
 /* Search Section Styles */
