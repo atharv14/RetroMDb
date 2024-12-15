@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro IMDb</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">IMDb</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search movies...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="featured">
+            <img src="/api/placeholder/1200/400" alt="Featured Movie">
+            <div class="featured-content">
+                <h2>28 Years Later</h2>
+                <p>Watch the Trailer</p>
+            </div>
+        </section>
+
+        <h2 style="margin: 2rem 0;">Featured Today</h2>
+        <div class="movie-grid">
+            <!-- Movie Cards -->
+            <div class="movie-card">
+                <img src="/api/placeholder/200/300" alt="Movie 1">
+                <h3>Movie Title</h3>
+                <p><i class="fas fa-star"></i> 4.5/5</p>
+                <button class="retro-button">View Details</button>
+            </div>
+            <!-- More movie cards -->
+            <div class="movie-card">
+                <img src="/api/placeholder/200/300" alt="Movie 2">
+                <h3>Retro Action</h3>
+                <p><i class="fas fa-star"></i> 4.2/5</p>
+                <button class="retro-button">View Details</button>
+            </div>
+            <div class="movie-card">
+                <img src="/api/placeholder/200/300" alt="Movie 3">
+                <h3>Digital Dreams</h3>
+                <p><i class="fas fa-star"></i> 4.8/5</p>
+                <button class="retro-button">View Details</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="blink">⭐ WELCOME TO RETRO IMDB ⭐</div>
+        <div class="visitor-counter">
+            Visitors: 000001
+        </div>
+        <div class="netscape">
+            Best viewed in Netscape Navigator
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
