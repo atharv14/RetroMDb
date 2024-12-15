@@ -7,7 +7,7 @@ const movieData = [
         director: "Martin Scorsese",
         genre: "Crime, Drama",
         description: "The story of Henry Hill and his life in the mob",
-        image: "../assets/movies/goodfellas/goodfellas.jpg",
+        image: "/RetroMDb/assets/movies/goodfellas/goodfellas.jpg",
         trailer: "2ilzidi_J8Q",
         cast: ["Robert De Niro", "Joe Pesci", "Ray Liotta", "Lorraine Bracco", "Paul Sorvino"]
     },
@@ -18,7 +18,7 @@ const movieData = [
         director: "Quentin Tarantino",
         genre: "Crime, Drama",
         description: "The lives of two mob hitmen, a boxer, and a pair of diner bandits intertwine",
-        image: "../assets/movies/pulp-fiction/pulp-fiction.jpg",
+        image: "/RetroMDb/assets/movies/pulp-fiction/pulp-fiction.jpg",
         trailer: "tGpTpVyI_OQ",
         cast: ["John Travolta", "Samuel L. Jackson", "Uma Thurman", "Bruce Willis", "Tim Roth"]
     },
@@ -29,7 +29,7 @@ const movieData = [
         director: "John Lasseter",
         genre: "Animation, Adventure",
         description: "A cowboy doll is profoundly threatened when a new spaceman figure supplants him as top toy",
-        image: "../assets/movies/toy-story/toy-story.jpg",
+        image: "/RetroMDb/assets/movies/toy-story/toy-story.jpg",
         trailer: "v-PjgYDrg70",
         cast: ["Tom Hanks", "Tim Allen", "Don Rickles", "Jim Varney", "Wallace Shawn"]
     },
@@ -40,7 +40,7 @@ const movieData = [
         director: "Frank Darabont",
         genre: "Drama",
         description: "Two imprisoned men bond over a number of years through acts of common decency",
-        image: "../assets/movies/shawshank-redemption/shawshank-redemption.jpg",
+        image: "/RetroMDb/assets/movies/shawshank-redemption/shawshank-redemption.jpg",
         trailer: "NmzuHjWmXOc",
         cast: ["Tim Robbins", "Morgan Freeman", "Bob Gunton", "William Sadler", "Clancy Brown"]
     },
@@ -51,7 +51,7 @@ const movieData = [
         director: "James Cameron",
         genre: "Drama, Romance",
         description: "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic",
-        image: "../assets/movies/titanic/titanic.jpg",
+        image: "/RetroMDb/assets/movies/titanic/titanic.jpg",
         trailer: "I7c1etV7D7g",
         cast: ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane", "Kathy Bates", "Frances Fisher"]
     },
@@ -62,7 +62,7 @@ const movieData = [
         director: "The Wachowskis",
         genre: "Action, Sci-Fi",
         description: "A computer programmer discovers that reality as he knows it is a simulation created by machines",
-        image: "../assets/movies/matrix/matrix.jpg",
+        image: "/RetroMDb/assets/movies/matrix/matrix.jpg",
         trailer: "vKQi3bBA1y8",
         cast: ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss", "Hugo Weaving", "Joe Pantoliano"]
     },
@@ -73,7 +73,7 @@ const movieData = [
         director: "James Cameron",
         genre: "Action, Sci-Fi",
         description: "A cyborg, identical to the one who failed to kill Sarah Connor, must now protect her teenage son",
-        image: "../assets/movies/terminator-2/terminator-2.jpg",
+        image: "/RetroMDb/assets/movies/terminator-2/terminator-2.jpg",
         trailer: "CRRlbK5w8AE",
         cast: ["Arnold Schwarzenegger", "Linda Hamilton", "Edward Furlong", "Robert Patrick", "Joe Morton"]
     },
@@ -84,7 +84,7 @@ const movieData = [
         director: "Robert Zemeckis",
         genre: "Drama, Romance",
         description: "Historical events unfold from the perspective of an Alabama man",
-        image: "../assets/movies/forrest-gump/forrest-gump.jpg",
+        image: "/RetroMDb/assets/movies/forrest-gump/forrest-gump.jpg",
         trailer: "XHhAG-YLdk8",
         cast: ["Tom Hanks", "Robin Wright", "Gary Sinise", "Sally Field", "Mykelti Williamson"]
     },
@@ -95,7 +95,7 @@ const movieData = [
         director: "Roger Allers, Rob Minkoff",
         genre: "Animation, Adventure",
         description: "Lion prince Simba and his father are targeted by his bitter uncle",
-        image: "../assets/movies/lion-king/lion-king.jpeg",
+        image: "/RetroMDb/assets/movies/lion-king/lion-king.jpeg",
         trailer: "lFzVJEksoDY",
         cast: ["Matthew Broderick", "Jeremy Irons", "James Earl Jones", "Jonathan Taylor Thomas", "Moira Kelly"]
     },
@@ -106,7 +106,7 @@ const movieData = [
         director: "Steven Spielberg",
         genre: "Action, Adventure",
         description: "A theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok",
-        image: "../assets/movies/jurassic-park/jurassic-park.jpg",
+        image: "/RetroMDb/assets/movies/jurassic-park/jurassic-park.jpg",
         trailer: "_jKEqDKpJLw",
         cast: ["Sam Neill", "Laura Dern", "Jeff Goldblum", "Richard Attenborough", "Bob Peck"]
     }
